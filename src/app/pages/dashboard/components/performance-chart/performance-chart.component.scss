@@ -1,0 +1,76 @@
+@import 'src/app/styles/colors';
+@import 'src/app/styles/variables';
+@import 'src/app/styles/font';
+
+.performance-chart {
+  box-shadow: 0 3px 11px 0 #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A;
+  display: flex;
+  flex-direction: column;
+  height: 192px;
+  justify-content: space-between;
+
+  &__header {
+    align-items: center;
+    color: $grey;
+    display: flex;
+    justify-content: space-between;
+
+    &-title {
+      font-size: 20px;
+      font-weight: 400;
+      margin: 0;
+      line-height: 40px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    height: 70%;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-header {
+      display: flex;
+
+      &-item {
+        align-items: center;
+        display: flex;
+        margin-right: 16px;
+
+        &-icon_blue {
+          background-color: $blue;
+          border-radius: 50%;
+          width: 5px;
+          height: 5px;
+        }
+
+        &-icon_yellow {
+          background-color: $yellow;
+          border-radius: 50%;
+          width: 5px;
+          height: 5px;
+        }
+
+        &-text {
+          margin-left: 8px;
+          color: $grey;
+        }
+      }
+    }
+  }
+
+  &__progress-title {
+    margin: 20px 0 5px 0;
+    font-weight: 400;
+    font-size: $fs-medium;
+    color: $grey;
+  }
+
+  &__progress-bar {
+    margin-bottom: 8px;
+
+    @media ($small) {
+      margin-bottom: 10px;
+    }
+  }
+}

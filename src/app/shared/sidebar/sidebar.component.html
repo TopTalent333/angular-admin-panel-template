@@ -1,0 +1,56 @@
+<mat-list>
+  <mat-list-item routerLink="{{routes.DASHBOARD}}" routerLinkActive="active">
+    <mat-icon>home</mat-icon> Dashboard
+  </mat-list-item>
+  <mat-list-item routerLink="{{routes.TYPOGRAPHY}}" routerLinkActive="active">
+    <mat-icon>text_fields</mat-icon> Typography
+  </mat-list-item>
+  <mat-list-item routerLink="{{routes.TABLES}}" routerLinkActive="active">
+    <mat-icon>border_all</mat-icon> Tables
+  </mat-list-item>
+  <mat-list-item routerLink="{{routes.NOTIFICATION}}" routerLinkActive="active">
+    <mat-icon>notifications_none</mat-icon> Notification
+  </mat-list-item>
+  <mat-list-item (click)="openUiElements()">
+    <mat-icon>filter_none</mat-icon> UI Elements
+  </mat-list-item>
+    <div>
+      <mat-list-item class="ui-element" routerLink="{{routes.UI_ELEMENTS_ICONS}}" routerLinkActive="active">
+        <div class="circle"></div>Icons
+      </mat-list-item>
+      <mat-list-item class="ui-element" routerLink="{{routes.UI_ELEMENTS_CHARTS}}" routerLinkActive="active">
+        <div class="circle"></div>Charts
+      </mat-list-item>
+      <mat-list-item class="ui-element" routerLink="{{routes.UI_ELEMENTS_MAP}}" routerLinkActive="active">
+        <div class="circle"></div>Map
+      </mat-list-item>
+    </div>
+</mat-list>
+
+<p class="sidebar-title">Help</p>
+
+<mat-list>
+  <a href="https://flatlogic.com/templates" target="_blank" style="text-decoration: none;">
+    <mat-list-item>
+      <mat-icon>library_books</mat-icon> Library
+    </mat-list-item>
+  </a>
+  <a href="https://flatlogic.com/forum/" target="_blank" style="text-decoration: none;">
+    <mat-list-item>
+      <mat-icon>question_answer</mat-icon> Support
+    </mat-list-item>
+  </a>
+  <a href="https://flatlogic.com/forum" target="_blank" style="text-decoration: none;">
+    <mat-list-item>
+      <mat-icon>help_outline</mat-icon> FAQ
+    </mat-list-item>
+  </a>
+</mat-list>
+
+<p class="sidebar-title">Projects</p>
+
+<mat-list>
+  <mat-list-item> <div class="project-circle project-circle_yellow"></div> My resend </mat-list-item>
+  <mat-list-item> <div class="project-circle project-circle_blue"></div> Starred</mat-list-item>
+  <mat-list-item> <div class="project-circle project-circle_pink"></div> Background </mat-list-item>
+</mat-list>

@@ -1,0 +1,43 @@
+<app-layout>
+  <mat-toolbar role="heading" class="page-header">
+    <h1>Charts Page - Data Display</h1>
+    <button mat-flat-button color="warn">Latest Reports</button>
+  </mat-toolbar>
+
+  <div class="charts-content">
+    <div class="charts-content__charts-wrapper">
+
+      <mat-card class="charts-content__chart-item">
+        <mat-card-title>
+          <p>Apex Line Chart</p>
+        </mat-card-title>
+        <app-line-chart [lineChartData]="lineChartData$ | async"></app-line-chart>
+      </mat-card>
+
+      <mat-card class="charts-content__chart-item">
+        <mat-card-title>
+          <p>Apex Heatmap Chart</p>
+        </mat-card-title>
+        <app-heatmap-chart [heatmapChartData]="heatmapChartData$ | async"></app-heatmap-chart>
+      </mat-card>
+    </div>
+
+    <div class="charts-content__charts-wrapper">
+      <mat-card class="charts-content__chart-item">
+        <mat-card-title>
+          <p>Apex Dashed Line Chart</p>
+        </mat-card-title>
+        <app-dashed-line-chart [dashedLineChartData]="dashedLineChartData$ | async"></app-dashed-line-chart>
+      </mat-card>
+
+      <mat-card class="charts-content__chart-item">
+        <mat-card-title>
+          <p>Apex Pie Chart</p>
+        </mat-card-title>
+        <app-pie-chart [pieChartData]="pieChartData$ | async"></app-pie-chart>
+      </mat-card>
+    </div>
+  </div>
+
+  <app-footer></app-footer>
+</app-layout>

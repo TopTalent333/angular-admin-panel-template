@@ -1,0 +1,49 @@
+@import 'src/app/styles/colors';
+@import 'src/app/styles/font';
+
+.server-chart {
+  box-shadow: 0 3px 11px 0 $shadow-white, 0 3px 3px -2px $shadow-grey, 0 1px 8px 0 $shadow-dark-grey;
+  display: flex;
+  flex-direction: column;
+  height: 192px;
+
+  &__header {
+    align-items: center;
+    color: $grey;
+    display: flex;
+    justify-content: space-between;
+
+    &-title {
+      font-size: $fs-medium;
+      font-weight: $fw-lighter;
+      margin: 0;
+      line-height: 40px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+
+    &-item {
+      align-items: center;
+      display: flex;
+      height: 50px;
+      justify-content: space-between;
+
+      &-text {
+        width: 100%;
+        color: $grey;
+        font-weight: $fw-lighter;
+        font-size: $fs-small;
+        padding-right: 16px;
+        margin: 0;
+      }
+    }
+  }
+}
+
+
+

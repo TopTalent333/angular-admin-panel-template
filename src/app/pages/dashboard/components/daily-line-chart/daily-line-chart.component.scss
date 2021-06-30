@@ -1,0 +1,97 @@
+@import "src/app/styles/colors";
+@import "src/app/styles/font";
+@import "src/app/styles/variables";
+
+.chart {
+  box-shadow: 0 3px 11px 0 $shadow-white, 0 3px 3px -2px $shadow-grey, 0 1px 8px 0 $shadow-dark-grey;
+  margin: 16px 24px;
+
+   &__header {
+     display: flex;
+     justify-content: space-between;
+     padding: 8px;
+
+     @media (max-width: $small) {
+       flex-wrap: wrap;
+     }
+   }
+
+   &__title {
+     margin: 0;
+     display: flex;
+     align-items: center;
+     color: $grey;
+     font-weight: $fw-normal;
+     font-size: $fs-regular;
+     text-transform: none;
+     line-height: 1.6;
+     letter-spacing: 0.12px;
+     order: 1;
+   }
+
+  &__content {
+    height: 380px;
+    width: 100%;
+    @media (max-width: $small) {
+      overflow-x: scroll;
+    }
+  }
+
+  &__content-item {
+    @media (max-width: $small) {
+      width: 600px;
+    }
+  }
+}
+
+.chart-legend {
+  display: flex;
+  order: 2;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-top: 2.24px;
+    margin-right: 24px;
+  }
+
+  &__icon {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+  }
+
+  &__title {
+    text-transform: none;
+    font-weight: $fw-normal;
+    font-size: $fs-regular;
+    color: $grey;
+    margin-left: 8px;
+  }
+
+  @media (max-width: $small) {
+    margin-top: 20px;
+    order: 3;
+  }
+}
+
+.chart-select {
+  order: 3;
+
+  @media (max-width: $small) {
+    order: 2;
+  }
+}
+
+.yellow {
+  background-color: $yellow;
+}
+
+.blue {
+  background-color: $blue;
+}
+
+.light-blue {
+  background-color: $white-blue;
+}
+

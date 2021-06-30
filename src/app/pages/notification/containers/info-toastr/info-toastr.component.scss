@@ -1,0 +1,26 @@
+@import 'src/app/styles/colors';
+@import 'src/app/styles/toasrt';
+
+.toastr-wrapper {
+  @include toastr-wrapper;
+}
+
+.toastr-wrapper-icon {
+  @include toastr-wrapper-icon;
+}
+
+.toastr-content {
+  @include toastr-content;
+
+  &__title {
+    @include toastr-content-title;
+  }
+}
+
+.toastr-icon {
+  @include toastr-icon;
+}
+
+:host {
+  @include toastr($blue);
+}
